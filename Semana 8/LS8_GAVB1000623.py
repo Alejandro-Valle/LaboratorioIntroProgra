@@ -15,20 +15,23 @@ while operacion !="3":
             factorial= factorial * p
             print(factorial)
 
-
     if operacion =="2":
         print("ingrese un valor")
         y=int(input(), base=0)
         print("Fibonacci: ")
         a=0
         b=1
-        for z in range (y):
+        for z in range (1,y):
             c=b+a
             a=b
             b=c
             print(a)
 
-    if operacion == "3":
+    print("Seleccione una de las siguientes opciones: 1. Factorial, 2. Secuencia de Fibonacci, 3. Salir")
+    operacion=input()
+
+
+if operacion == "3":
         print("Ha salido del menú")
     
 
