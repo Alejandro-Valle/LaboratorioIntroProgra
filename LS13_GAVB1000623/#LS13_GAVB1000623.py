@@ -13,20 +13,24 @@ class circulo:
     def obtenervolumen(self):
         return (4*3.1416*self.radio*self.radio*self.radio)/3
 
+ciclo=True
 
-radio=float(input("Ingrese el radio del circulo: "))
-if radio<0:
-    print("No se pueden tener medidas negativas")
-else:
-    circulo1=circulo(radio)
+while ciclo==True:
 
-    print("_____CARACTERISTICAS DEL CIRCULO_____")
-    print("El área del circulo es: ")
-    print(circulo1.obtenerarea())
-    print("El perimetro del círculo es: ")
-    print(circulo1.obtenerperimetro())
-    print("El volumen del círculo es: ")
-    print(circulo1.obtenervolumen())
+    radio=float(input("Ingrese el radio del circulo: "))
+
+    if radio<0:
+        print("No se pueden tener medidas negativas")
+    else:
+        circulo1=circulo(radio)
+        print("_____CARACTERISTICAS DEL CIRCULO_____")
+        print("El área del circulo es: ")
+        print(circulo1.obtenerarea())
+        print("El perimetro del círculo es: ")
+        print(circulo1.obtenerperimetro())
+        print("El volumen del círculo es: ")
+        print(circulo1.obtenervolumen())
+        ciclo=False
 
 
 
