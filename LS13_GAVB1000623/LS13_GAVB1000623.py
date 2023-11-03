@@ -1,5 +1,12 @@
 #LS13_GAVB1000623
-cantidad_circulos= int(input("Ingrese la cantidad de circulos que quiere: "))
+
+cantidad=True
+while cantidad==True:
+    cantidad_circulos= int(input("Ingrese el número de circulos que quiere: "))
+    if cantidad_circulos<0:
+        print("Debe de ingresar un número positivo. ")
+    else:
+        cantidad=False
 
 class circulo:
     def __init__(self, radio):
